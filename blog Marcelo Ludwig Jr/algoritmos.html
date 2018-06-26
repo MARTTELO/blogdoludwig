@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+  <!-- META -->
+  
+  <meta name="author" content="Marcelo Ludwig Junior">
+  <meta name="description" content="MPEG Design - Empresa especializada em soluções criativas. Design Gráfico e Produção de Conteúdo para Internet">
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+  <meta name="keywords" content="designer gráfico,editoração eletrônica, cartões,folder's, cartões de visita, convites, banner's, sites, blogs, produção de conteúdo, marketing digital, rede social, publico alvo">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Algorítimos e Lógica da Programação</title>
+  
+				
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+  <section>
+  
+        <nav class="menu">
+        <ul>
+          <li><a href="index.html" >Home</a></li>
+          <li class="dropdown">
+          <a href="javascript:void(0)" class="dropbtn">Disciplinas</a>
+          <div class="dropdown-content">
+            <a href="algoritmos.html">Algorítimos</a>
+            <a href="bases-of-net.html">Bases da Internet</a>
+            <a href="conteudo-web.html">Conteúdo pra Web</a>
+            <a href="design-digital.html">Design Digital</a>
+            <a href="matematica-elementar.html">Matemática Elementar</a>
+            <a href="padroes-sitios.html">Padrões de Projeto</a>
+            <a href="producao-texto.html">Produção de Texto</a>
+          </div>
+        </li>
+          <li><a href="sobre.html">Sobre</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </nav>
+      
+<section>
+
+    <div id="descricao">
+  
+      <div id='foto'>
+      <img src="img/ligia.jpg" alt="foto Professora ligia"> 
+      </div>
+      <h1>Algorítimos e Lógica da Programação</h1>
+        <p class="desc">Algorítimo nada mais é do que uma sequência logica de passos finitos para a resolução de um problema. A logica está relacionada a ordenação correta dos passos. A base para aprender qualquer linguagem de programação passa pelo aprendizado do algorítimo. É preciso conhecer os tipos de dados, conceitos de variáveis, operadores de atribuição, lógicos, relacionais, aritméticos, literias, teste de condição, estruturas de repetição, de laço, matrizes, enfim tem muita coisa para aprender e se tornar um programador de qualidade. Esta disciplina é misnistrada pela Professora Lígia Rodrigues Prete.</p>
+        <a href="http://buscatextual.cnpq.br/buscatextual/visualizacv.do?id=K4501261U6" target="n_blanck"><button class="curriculo">Currículo</button></a>
+
+    </div>  <br><br>
+</section>
+
+<!-- ================================== DIV = 1 =================================================================== -->
+
+    
+<article id="secao1"><!-- Início do article -->
+
+   <h2 >Estrutural Condicional</h2><br>
+   <p>Para saber se um número é par ou ímpar deve-se fazer a divisão inteira do número por 2.</p>
+   <p>Se o resto da divisão é 0 (zero) o número é par, senão o número é ímpar.</p> <br>
+   <img class="imagens" src="img/algoritmos/estrutura condicional.PNG" alt="estrura condicional" width="100%" border="1">
+
+
+  </article><!--fim do article -->
+
+  <!-- div para codigo -->
+    
+<div class="codigo">
+    <div class="w3-code notranslate htmlHigh"><br>
+    <span style="color:brown"><span style="color:mediumblue"></span>//Exemplo while em C<span style="color:mediumblue"></span></span><br>
+    
+<pre>
+  
+    #include &lsaquo;stdio.h&rsaquo;
+
+    void par_impar(){
+    
+    int n;
+    
+    printf("Aula 10 - Exemplo com If e Else \n \n");
+    
+    printf("Digite um número: ");
+    scanf("%d", &n);
+    
+    if (n % 2 == 0){
+        
+        printf("%d é par \n",n);
+        
+    }else{
+        
+        printf("%d é impar \n",n);
+    }
+} </pre><br><br>
+    <span style="color:brown"><span style="color:mediumblue"></span>//Fim do código<span style="color:mediumblue"></span></span><br>
+  </div>
+</div>
+
+<!-- ================================== DIV = 2 =================================================================== -->
+
+<article id="secao2"><!-- Início do article -->
+
+   <h2 >Estrutura de Repetição</h2>
+   <h2>While</h2>
+   <p>A técnica denominada estrutura de repetição ou laço de repetição, é uma estrutura de programação que facilita repetir determinados trechos de código. Essa técnica reduz o trabalho de programação, principalmente quando é preciso repetir várias vezes alguma ação importante no programa.</p>
+   <p>A estrutura de repetição faz a verificação da condição para executar as instruções subordinadas. Caso o resultado lógico seja verdadeiro ele executa a ação do próximo bloco de instruções, senão ele sai do programa.</p> <br>
+   <img class="imagens" src="img/algoritmos/repeticao_while.PNG" alt="estrura condicional" width="100%" border="1">
+
+
+  </article><!--fim do article -->
+
+  <!-- div para codigo -->
+    
+<div class="codigo-2">
+    <div class="w3-code notranslate htmlHigh"><br>
+    <span style="color:brown"><span style="color:mediumblue"></span>//Exemplo while em C<span style="color:mediumblue"></span></span><br>
+
+<pre>
+  
+    #include &lsaquo;stdio.h&rsaquo;
+
+    void aula12_2_tabuada_1_10_while() {
+
+
+    int cont1, cont2;
+
+    printf("**** Aula 12: Tabuada com While ****\n\n");
+
+    cont1 = 1;
+    cont2 = 0;
+
+    while (cont1 <= 5) {
+        printf("-----------------------------\n");
+        printf("TABUADA DO NÚMERO: %d \n", cont1);
+        printf("-----------------------------\n");
+
+        while (cont2 <= 10) {
+            printf("%d  x  %d  =  %d \n", cont1, cont2,\n
+            cont1 * cont2);
+            cont2 += 1;
+        }
+        cont2 = 0;
+        cont1 += 1;
+
+    }
+    printf(" \n");
+    printf(" Fim da Tabuada! \n");
+
+} </pre><br><br>
+    <span style="color:brown"><span style="color:mediumblue"></span>//Fim do código<span style="color:mediumblue"></span></span><br>
+
+  </div>
+</div>
+
+<!-- ================================== DIV = 3 =================================================================== -->
+
+<article id="secao3"><!-- Início do article -->
+
+   <h2 >Estrutural de Repetição FOR</h2><br>
+   <p>O laço com FOR é geralmente usado quando você sabe o número de iterações de antemão. Diferentemente do WHILE onde não sabemos esse número.</p>
+   <p> A estrutura de repetição pode ser classificada como Interativa e Iterativa. <strong>Interativa</strong> quando necessitam necessitam da intervenção de um usuário do programa, para repeti a próxima ação de um indeterminado número de vezes, <strong>Iterativa</strong> quando executam as repetições previstas de forma automática, conforme configuração da condição.</p> <br>
+   <img class="imagens" src="img/algoritmos/repeticao_for.png" alt="estrura condicional" width="100%" border="1">
+
+
+  </article><!--fim do article -->
+
+  <!-- div para codigo -->
+    
+<div class="codigo-3">
+    <div class="w3-code notranslate htmlHigh"><br>
+    <span style="color:brown"><span style="color:mediumblue"></span>//Exemplo while em C<span style="color:mediumblue"></span></span><br>
+    
+<pre>
+  
+    #include &lsaquo;stdio.h&rsaquo;
+
+    void par_impar(){
+    
+    int n;
+    
+    printf("Aula 10 - Exemplo com If e Else \n \n");
+    
+    printf("Digite um número: ");
+    scanf("%d", &n);
+    
+    if (n % 2 == 0){
+        
+        printf("%d é par \n",n);
+        
+    }else{
+        
+        printf("%d é impar \n",n);
+    }
+} </pre><br><br>
+    <span style="color:brown"><span style="color:mediumblue"></span>//Fim do código<span style="color:mediumblue"></span></span><br>
+  </div>
+</div>
+
+<!-- ================================== FOOTER =================================================================== -->
+
+<footer>
+    <div class="footer-bottom">
+      <div class="wrap">
+        <div class="footer-btm-left">
+          <a href="#"><img src="img/footer-logo1.png" alt="" width="30%" /></a>
+        </div>
+
+        <div class="footer-btm-right">
+              <ul class="footer-links">    
+                 <li><a href="index.html" class="scroll">Home</a></li>
+                 <li><a href="sobre.html"" class="scroll">Sobre</a></li>
+                 <li><a href="contato.html" class="scroll">Contato</a></li>
+        </ul> 
+          <ul class="social-icons">
+              <li class="tweeter"><a href=https://twitter.com/Marcelo_Ludwig target="n_blank" /></a></li>
+                  <li class="facebook"><a href=https://www.facebook.com/marcelo.ludwigjunior target="n_blank/"></a></li>
+                  <li class="instagram"><a href=https://www.instagram.com/marttelo/ target="n_blank/"></a></li>
+              <div class="clear"></div>
+            </ul>
+        </div>
+      <div class="clear"></div>
+      </div>
+               
+    </div></footer>
+     <div class="copy">
+                 <p >Copyright &copy; Marcelo Ludwig Junior 2017, todos os direitos reservados.</p>
+    </div>
+  </section>
+</body>
+</html>

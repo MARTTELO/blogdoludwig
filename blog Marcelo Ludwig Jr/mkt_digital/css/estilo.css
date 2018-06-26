@@ -1,0 +1,206 @@
+/*!
+ * Bootstrap v3.3.7 (http://getbootstrap.com)
+*/
+
+/* reset de margens */
+* {
+    margin: 0;
+    padding:0;
+}
+
+/* para garantir que estes elementos ocuparão toda a tela */
+body, html {
+    width: 100%;
+    height: 100%;
+    font-family: sans-serif;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    background: #ffffff;
+}
+
+.video{
+	display: relative;
+	margin-left: 120px;
+	border: 2 solid #000;
+}
+
+#menu ul {
+    list-style-type: none;
+    height: 50px;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: orange;
+}
+
+#menu li {
+    float: right;
+}
+
+#menu li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+#menu li a:hover {
+    background-color: #111;
+    height: 100px;
+}
+
+
+#frase{
+text-align: right;
+}
+
+
+ul {
+    margin: 0 auto;
+    
+}
+
+h2{
+	font-size: 2em;
+	padding-top: 10px;
+	background-color: orange;
+	height: 50px;
+	text-align: center;
+	color: #ffffff;
+    padding-left: 20px;
+}
+
+h3{
+	margin-bottom: 15px;
+	font-size: 2em;
+	color: orange;
+	text-align: left;
+    padding-left: 20px;
+
+}
+
+h1{
+  margin-left: 20px;
+  font-size: 2em;
+  color: orange;
+  text-align: center;
+
+}
+
+img{
+margin-top: 15px;
+margin-left: 80px;
+padding-bottom: 30px;
+
+}
+
+
+
+#fundo-externo {
+    overflow: hidden; /* para que não tenha rolagem se a imagem de fundo for maior que a tela */
+    width: 100%;
+    height: 100%;
+    position: relative; /* criamos um contexto para posicionamento */
+}
+
+#fundo {
+    position: fixed; /* posição fixa para que a possível rolagem da tela não revele espaços em branco */
+    width: 100%;
+    height: 100%;
+}
+
+#fundo img {
+    width: 100%; /* com isso imagem ocupará toda a largura da tela. Se colocarmos height: 100% também, a imagem irá distorcer */
+    position: absolute;
+    opacity: 100%;
+}
+
+#site {
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    width: 860px;
+    padding: 20px;
+    margin-left: -450px; /* por causa do posicionamento absoluto temos que usar margem negativa para centralizar o site */
+    background: #FFF; /* fundo branco para navegadores que não suportam rgba */
+    background: rgba(255,255,255,0.9); /* fundo branco com um pouco de transparência */
+}
+
+p{
+    margin-bottom: 1.5em;
+    text-align: justify;
+    font-size: 14pt;
+    text-indent: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+    line-height: 30px;
+}
+
+
+.margen{
+
+margin-left: 100px;
+line-height: 30px;
+
+
+}
+
+
+#ref h1{
+
+	margin-top: 50px;
+}
+
+#ref p{
+    margin-bottom: 1.5em;
+    text-align: center;
+}
+
+#ref ul {
+   margin-left: 50px;
+}
+
+
+#rodape {
+	margin-top: 360px;
+
+}
+
+#fundo_ref{
+	 background: rgba(0,0,0,0.05); /* fundo branco com um pouco de transparência */
+
+}
+
+#oitops {
+	margin-top: 10px;
+
+}
+
+#scup{
+margin: left;
+padding-bottom: 5px;
+
+}
+
+#livebiz{
+
+margin: left;
+padding-bottom: 5px;
+
+}
+
+
+
+footer{
+    margin-top: 30px;
+    padding: 10px;
+    position: relative;
+    text-align: right;
+    background-color: orange;
+    height: 20px;
+    color: #ffffff;
+
+}
+
