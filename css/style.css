@@ -9,6 +9,14 @@ body {
     margin: 0;
 }
 
+p{
+    text-align: justify;
+}
+
+h1{
+    font-size: 4em;
+}
+
 /* Header*/
 .header {
     padding: 60px;
@@ -46,59 +54,66 @@ body {
 .side {
     flex: 30%;
     background-color: #f1f1f1;
-    padding: 20px;
-    height: 950px;
+    padding: 4%;
+    height: 1510px;
 }
 
 /* Main column */
 .main {
     flex: 70%;
     background-color: white;
-    padding: 20px;
+    padding: 3% 6% 6% 6%;
 }
 
-
-
-img{
-    display: block;
-
-}
-
-
-.fakeimg {
-    background-image: url(../img/Capturar12.png);
-    background-repeat: no-repeat;
-    margin: 0 auto;
-    width: 100%;
-    padding: 150px;
-}
 
 .fakeimg1{
     background-image: url(../img/file.jpg);
     background-repeat: no-repeat;
     width: 100%;
     height: 25%;
-    padding: 20px;
+    padding-left: 5%;
 }
 .fakeimg2{
     background-image: url(../img/etec_info.png);
     background-repeat: no-repeat;
     width:100%;
     height: 25%;
-    padding: 20px;
+    padding: 3%;
 }
 
 .fakeimg3{
     background-image: url(../img/etec_adm.png);
     background-repeat: no-repeat;
     width: 100%;
-    height: 30%;
-    padding: 20px;
+    height: 25%;
+    padding: 3%;
 }
 
+.fakeimg4 {
+    background-image: url(../img/siteMPEG.png);
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    width: 100%;
+    padding: 150px;
+}
+
+.fakeimg5 {
+    background-image: url(../img/tecnoflex.png);
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    width: 100%;
+    padding: 150px;
+}
+
+
 /* Footer */
+.voltar{
+    display: block;
+    padding-left:45%;
+}
+
 .footer {
-    padding: 30px;
+    padding: 4%;
     text-align: center;
     background: #ddd;
     height: 100px;
@@ -108,8 +123,15 @@ img{
     font-size: 1em;
 }
 
+
 /* Breakpoint - quando a tela for inferior a 700px, ajustar colunas */
-@media screen and (max-width: 700px) {  
+@media screen and (max-width: 700px) { 
+
+    h1{
+
+        font-size: 2em;
+    }
+
     .row, .navbar {   
         flex-direction: column;
     }
@@ -121,8 +143,8 @@ img{
 
     }
     
-    .fakeimg{
-        background-image: url(../img/Capturar21.png);
+    .fakeimg4{
+        background-image: url(../img/siteMPEG_mini.png);
         background-repeat: no-repeat;
         margin-left: 0;
         width: 100%;
@@ -130,8 +152,46 @@ img{
 
     }
 
+    .fakeimg5{
+        background-image: url(../img/tecnoflex_mini.png);
+        background-repeat: no-repeat;
+        margin-left: 0;
+        width: 100%;
+        padding-bottom: 55px;
+
+    }
+
+    .side {
+        height: 900px;
+    }
+
     .footer h2{
     font-size: 0.85em;
+    }
+
+    .voltar{
+   padding-left:36vw;
 }
 
-}
+
+    }
+
+/* Galeria de Imagens */
+
+    .gallery {
+      display: flex;  
+      flex-wrap: wrap;
+      margin: 1em 0;
+      padding: 1em;
+    }
+    .item {
+      flex: 1 0 17em;
+      margin: 1em;
+      min-width: 7em;
+      min-height: 7em;
+    }
+
+    .item img {
+      display: block;
+      width: 100%;
+    }

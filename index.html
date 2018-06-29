@@ -1,31 +1,31 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-<title>Blog do Ludwig</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" type="text/css" href="css/style.css">
+   <title>Blog do Ludwig</title>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" type="text/css" href="css/style.css">
 
 </head>
 <body>
 
-<!-- Header -->
-<section class="header">
-  <h1>Blog do Ludwig</h1>
-  <p>Usando <b>flexbox</b> layout.</p>
-</section>
+   <!-- Header -->
+   <section class="header">
+    <h1>Blog do Ludwig</h1>
+ </section>
 
-<!-- Menu -->
-<section class="navbar">
-  <a href="#">Home</a>
-  <a href="#trabalhos">Trabalhos</a>
-  <a href="#projetos">Projetos</a>
-  <a href="#sobre">Sobre</a>
-</section>
+ <!-- Menu -->
+ <section class="navbar">
+    <a name="topo"></a>
+    <a href="index.html" tabindex="1">Home</a>
+    <a href="#trabalhos" tabindex="2">Trabalhos</a>
+    <a href="#galeria" tabindex="3">Galeria</a>
+    <a href="#sobre" tabindex="4">Sobre</a>
+ </section>
 
-<!-- Flexbox Conteudo -->
-<section class="row">
-  <aside class="side">
+ <!-- Aside Conteudo -->
+ <section class="row">
+    <aside class="side">
       <a name="sobre"></a>
       <h2>Sobre mim</h2>
       <div class="fakeimg1"></div>
@@ -35,28 +35,44 @@
       <div class="fakeimg2"></div><br>
       <div class="fakeimg3"></div><br><br>
       
-  </aside>
+   </aside>
 
-  <article class="main">
+   <!-- Article Conteudo -->
+   <a name="trabalhos"></a>
+   <article class="main">
       <a name="trabalhos"></a>
-      <h2>Trabalhos</h2>
+      <h2>Trabalhos - Blog MPEG Design</h2>
       <h5>Trabalhos desenvolvidos ao longo do Curso</h5>
-      <a href="blog Marcelo Ludwig Jr/index.html"><div class="fakeimg"></div></a>
-      <p>Web site desenvolvido na aula de Padroes de proj Sites I, ministrado pelo professor Alexandre Bernardes. Todo o site foi desenvolvido sem a aplicação das melhores práticas. </p>
-      <br>
-      <a name="projetos"></a>
-      <h2>Projetos</h2>
-      <h5>Trabalhos desenvolvidos ao longo do Curso</h5>
-      <a href="blog Marcelo Ludwig Jr/index.html"><div class="fakeimg"></div></a>
-      <p>Web site desenvolvido na aula de Padroes de proj Sites I, ministrado pelo professor Alexandre Bernardes. Todo o site foi desenvolvido sem a aplicação das melhores práticas. </p>
-      <br>
-  </article>
+      <a href="blog Marcelo Ludwig Jr/index.html"><div class="fakeimg4" tabindex="5"></div></a>
+      <p>Web site desenvolvido na aula de Padroes de proj Sites I, ministrado pelo professor Alexandre Bernardes. Todo o site foi desenvolvido sem a aplicação das melhores práticas. </p><br><br><br>
 
+      <!-- Galeria -->
+      <a name="galeria"></a>
+      <h2>Galeria</h2>
+      <p>Galeria de imagens desenvolvida com as técnicas adquiridas ao longo do segundo semestre  utilizando o flexbox minitrada pelo professor Heitor Augusto .</p><br><br>
+
+      <section class="gallery">       
+         <article class="item">
+           <img alt= "foto da página Anyone do facebook" src="img/pagina face.jpg">
+        </article>
+        <article class="item">
+          <img alt="foto mostrando cadeados representando segurança" src="img/lastpasslogin.jpg">
+       </article>
+       <article class="item">
+        <img alt="foto da home principal do site Anyone" src="img/anyone_home.png">
+     </article>
+  </section>  
+  <div class="voltar">
+   <a href="#topo"><img src="img/seta_top1.png" tabindex="6"></a>
+  </div>
+</article>
 </section>
+
+
 
 <!-- Footer -->
 <footer class="footer">
-  <h2>Copyright &copy; Marcelo Ludwig Junior 2018, todos os direitos reservados.</h2>
+ <h2>Copyright &copy; Marcelo Ludwig Junior 2018, todos os direitos reservados.</h2>
 </footer>
 
 </body>
